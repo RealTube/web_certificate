@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RP</title>
+        <link rel="icon" href="img/logo.png" type="image/jpeg">
+        <link rel="stylesheet" href="style/home.css">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script src="javascript/quiz.js" defer></script>
+        <script src="javascript/pomodoro.js" defer></script>
+    </head>
+
+    <body>
+        <div class="container1">
+            <div class="home">
+                <h1>Real <br> Productivity</h1>
+                <p>Die beste Pomodoro<br>Webseite der Welt</p>
+            </div>
+            <div class="about">
+                <h2>Was ist Real Productivity?</h2>
+                <p>Real Productivity ist eine Webseite, die dir hilft, deine Produktivität zu steigern. 
+                    Mit der Pomodoro-Technik kannst du deine Zeit effektiv nutzen und deine Ziele erreichen. 
+                    Die Webseite ist einfach zu bedienen und bietet dir viele Funktionen, die dir helfen, 
+                    fokussiert zu bleiben und deine Aufgaben zu erledigen.</p>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="motivation">
+                <h2>Motivation?</h2>
+                <p>Die Motivation für diese Webseite kam von dem Buch "Atomic Habits" von James Clear. 
+                    In diesem Buch geht es darum, wie kleine Gewohnheiten große Veränderungen bewirken können. 
+                    Diese Idee hat mich inspiriert, eine Plattform zu schaffen, die Menschen dabei hilft, 
+                    ihre Produktivität zu steigern und ihre Ziele zu erreichen. (Buch anklicken!)</p>
+            </div>
+            <div>
+                <img src="img/atomic.jpg" alt="atomic habits" id="atomic_img" onclick="window.open('https://www.amazon.de/Atomic-Habits-James-Clear/dp/1847941834')">
+            </div>
+        </div>
+
+        <div class="container3">
+            <h1 id="quizhead">Quiz</h1>
+            <div class="quiz">
+                <button id="start" onclick="start()">Start</button>
+                <p id="intro"></p>
+                <div id="question-container">
+                    <div id="question">Question text</div>
+                    <div id="answer-buttons">
+                        <label>
+                            <input type="radio" name="answer" value="0" id="option0">
+                            Option 1
+                        </label>
+                        <label>
+                            <input type="radio" name="answer" value="1" id="option1">
+                            Option 2
+                        </label>
+                        <label>
+                            <input type="radio" name="answer" value="2" id="option2">
+                            Option 3
+                        </label>
+                        <label>
+                            <input type="radio" name="answer" value="3" id="option3">
+                            Option 4
+                        </label>
+                    </div>
+                </div>
+                <button id="weiter" onclick="weiter()"></button>
+            </div>
+        </div>
+
+        <div class="container4">
+            <h1 id="pom_head">Real Pomodoro</h1>
+            <button id="info" onclick="info()">info</button>
+            <h1 id="status">Work</h1>
+            <h1 id="timer">25:00</h1>
+            <div class="skip-buttons">
+                <button id="plus" onclick="plus()">+</button>
+                <p>1min</p>
+                <button id="minus" onclick="minus()">-</button>
+            </div>
+            <div class="buttons">
+                <button id="startButton" onclick="startTimer()">Start</button>
+                <button id="pauseButton" onclick="pauseTimer()">Pause</button>
+                <button id="resetButton" onclick="resetTimer()">Reset</button>
+            </div>
+        </div>
+
+        <div class="container5">
+            <h1 id="funhead">Fun Zone</h1>
+            <div id="fun">
+                <h2>Welches Tier magst du am meisten?</h2>
+                <select id="animal-preference" onclick="changeVideo()">
+                    <option value="cat">Katze</option>
+                    <option value="dog">Hund</option>
+                    <option value="capybara">Wasserschwein</option>
+                    <option value="rabbit">Kaninchen</option>
+                    <option value="beaver">Biber</option>
+                </select>
+                <iframe id="video" width="1259" height="717" title="cute video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <h1 id="notbreak">Du hast grad keine Pause. Geh arbeiten!!!</h1>
+            </div>
+        </div>
+    </body>
+</html>

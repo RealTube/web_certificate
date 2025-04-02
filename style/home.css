@@ -1,0 +1,374 @@
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: 'DM Sans', Arial, sans-serif;
+}
+
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+
+.home {
+    text-align: center;
+    margin: 100px;
+}
+
+
+.home h1 {
+    font-size: 100px;
+    line-height: 1.1;
+    margin: 20px;
+}
+
+.home p {
+    font-size: 32px;
+    margin: 20px;
+}
+
+.about {
+    text-align: center;
+    padding: 30px 30px;
+    background-color: white;
+    color: black;
+    margin: 0 10%;
+    border-radius: 30px;
+}
+
+.about h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.container2 {
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    padding: 0 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.motivation{
+    padding: 30px;
+    background-color: black;
+    color: white;
+    margin-right: 10%;
+    border-radius: 30px;
+}
+
+.motivation h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.motivation p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+#atomic_img {
+    width: 400px;
+}
+
+.container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+#quizhead{
+    text-align: center;
+    font-size: 80px;
+    margin: 40px;
+}
+
+.quiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: white; 
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+    flex-direction: column;
+}
+
+.quiz p {
+    font-size: 32px;
+    margin: 20px;
+}
+
+#start{
+    font-size: 80px;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: 'DM Sans', Arial, sans-serif;
+}
+
+/* hover effekt hab ich mit KI gemacht */
+#start:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#weiter{
+    display: none;
+}
+
+#intro{
+    margin: 0 20%;
+    margin-bottom: 30px;
+}
+
+#weiter{
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: 'DM Sans', Arial, sans-serif;
+    margin-left: 50%;
+}
+
+#weiter:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#question-container {
+    font-size: 25px;
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 20%;
+    margin-bottom: 30px;
+}
+
+#answer-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.container4 {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.container4 h1 {
+    font-size: 120px;
+    text-align: center;
+    margin: 0 20%;
+}
+
+#timer{
+    margin-top: 0px;
+    font-size: 300px;
+    text-align: center;
+}
+
+#startButton{
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: 'DM Sans', Arial, sans-serif;
+    margin: 20px;
+}
+#pauseButton{
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: 'DM Sans', Arial, sans-serif;
+    margin: 20px;
+}
+#resetButton{
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: 'DM Sans', Arial, sans-serif;
+    margin: 20px;
+}
+
+#startButton:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#pauseButton:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#resetButton:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#pom_head{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#status{
+    font-size: 80px;
+    text-decoration: underline;
+    margin-bottom: -30px;
+}
+
+.skip-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+#plus{
+    font-size: 40px;
+    padding: 0 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: 'DM Sans', Arial, sans-serif;
+    margin: 0 20px;
+}
+#minus{
+    font-size: 40px;
+    padding: 0 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: 'DM Sans', Arial, sans-serif;
+    margin: 0 20px;
+}
+
+#funhead{
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+.container5 {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#fun {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background-color: white; 
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: black;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+#fun h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#animal-preference {
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; 
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+    flex-direction: column;
+}
+
+#fun iframe{
+    margin-top: 30px;
+}
+
+#notbreak {
+    text-align: center;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#info {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    font-family: 'DM Sans', Arial, sans-serif;
+    border: none;
+}
+
+#info:hover {
+    background-color: white;
+    color: grey;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#video{
+    display: none;
+}
